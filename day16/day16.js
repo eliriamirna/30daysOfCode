@@ -1,5 +1,5 @@
 function main() {
-    let S = parseInt('*')
+    let S = parseInt('50')
     
     try {
         if (isNaN(S)|| typeof S === 'undefined') throw 'Bad String'
@@ -10,3 +10,17 @@ function main() {
 }
 
 main()
+
+//Other solution
+
+function main() {
+    const S = parseInt(readLine());
+    try {
+        S != Number(S) && err()
+        console.log(Number(S))
+    } 
+    catch (err) {
+        console.log('Bad String')
+    }
+    
+}
